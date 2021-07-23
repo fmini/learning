@@ -1,4 +1,4 @@
-let stopped = false;
+let timer;
 
 document.querySelector('#date').addEventListener('change', e => {
   document.querySelector('#dateTitle').focus();
@@ -14,10 +14,12 @@ document.querySelector('#dateTitle').addEventListener('keyup', e => {
   }
 });
 
-document.querySelector('#submit').addEventListener('click', () =>
-  setInterval(() => {
-    timeTilDate(targetDate);
-  }, 1000)
+document.querySelector('#submit').addEventListener(
+  'click',
+  () =>
+    (timer = setInterval(() => {
+      timeTilDate(targetDate);
+    }, 1000))
 );
 
 document.querySelector('#submit').addEventListener('click', () => {
@@ -27,11 +29,9 @@ document.querySelector('#submit').addEventListener('click', () => {
 });
 
 document.querySelector('#stop').addEventListener('click', () => {
-  stopped = true;
-  console.log(stopped);
+  clearInterval(timer);
+  console.log('stopped');
 });
-
-console.log(stopped);
 
 let runCounter = countdown => {
   document.querySelector('#countdown-days').innerHTML = countdown.days;
