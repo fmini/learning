@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p,
+span {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.countdown-container {
+  height: 20vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.countdown-label-container {
+  height: 2vh;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.countdown-label-container p {
+  font-weight: 700;
+  opacity: 0.9;
+}
+.title {
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+.countdown {
+  height: 70%;
+  background-color: white;
+  width: 12.5%;
+  border-radius: 10%;
+  flex-wrap: wrap;
+}
+.countdown h1 {
+  color: red;
+  /* font-size: 5rem; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.countdown-label {
+  margin-top: -12%;
+  width: 12.5%;
+  justify-content: center;
+}
+#choose {
+  margin-left: 1rem;
+}
+#date {
+  margin-left: 1rem;
+}
+#dateTitle {
+  padding: 3px;
+}
+#dateTitle:focus {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+button {
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+#stop {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.3);
+}
