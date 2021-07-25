@@ -1,0 +1,1 @@
+document.querySelector('#gify-container').innerHTML = 'hello'
